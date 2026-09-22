@@ -1,0 +1,547 @@
+/* ========================================
+   RESET
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-color: #FFFDF7;
+    color: #293241;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+p {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ========================================
+   CABEÇALHO
+======================================== */
+
+.header {
+    background-color: #493B76;
+    color: #FFFFFF;
+    padding: 30px 0;
+}
+
+.header-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo-area h1 {
+    color: #F4C95D;
+    font-size: 2.5rem;
+    margin-bottom: 6px;
+}
+
+.logo-area p {
+    color: #FFFFFF;
+    font-size: 1rem;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.menu a {
+    color: #FFFFFF;
+    font-size: 1.05rem;
+    font-weight: 600;
+    transition: color 0.2s ease;
+}
+
+.menu a:hover {
+    color: #F4C95D;
+}
+
+
+/* ========================================
+   APRESENTAÇÃO
+======================================== */
+
+.apresentacao {
+    background-color: #A9D6E5;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+
+    padding: 100px 0;
+}
+
+.apresentacao-conteudo {
+    max-width: 1050px;
+}
+
+.tag {
+    display: inline-block;
+    color: #493B76;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 22px;
+}
+
+.apresentacao h2 {
+    color: #493B76;
+    font-size: 3.5rem;
+    line-height: 1.15;
+    max-width: 1050px;
+    margin-bottom: 30px;
+}
+
+.apresentacao p {
+    max-width: 1000px;
+    font-size: 1.25rem;
+    line-height: 1.9;
+    color: #293241;
+}
+
+
+/* ========================================
+   CONTEÚDO PRINCIPAL
+======================================== */
+
+.conteudo {
+    background-color: #FFFDF7;
+    padding: 90px 0;
+}
+
+.conteudo > .container > h2 {
+    color: #493B76;
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 80px;
+}
+
+
+/* ========================================
+   BLOCOS DE CONTEÚDO
+======================================== */
+
+.conteudo-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 60px;
+
+    margin-bottom: 90px;
+
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.conteudo-texto {
+    padding: 10px 0;
+}
+
+.conteudo-texto h3 {
+    color: #493B76;
+    font-size: 1.8rem;
+    margin-bottom: 24px;
+}
+
+.conteudo-texto p {
+    color: #293241;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.conteudo-texto strong {
+    display: block;
+    color: #493B76;
+    font-size: 1.05rem;
+    line-height: 1.5;
+    margin-top: 28px;
+}
+
+
+/* ========================================
+   IMAGENS
+======================================== */
+
+.conteudo-imagem {
+    width: 100%;
+    height: 340px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.conteudo-imagem img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+/* ========================================
+   MÍDIAS
+======================================== */
+
+.midias {
+    background-color: #D8CDEA;
+    padding: 90px 0;
+}
+
+.midias > .container > h2 {
+    color: #493B76;
+    text-align: center;
+    font-size: 2.2rem;
+    margin-bottom: 55px;
+}
+
+.midia-item {
+    background-color: #FFFFFF;
+    border-left: 5px solid #F4C95D;
+    border-radius: 10px;
+    padding: 35px;
+    margin-bottom: 40px;
+
+    box-shadow: 0 5px 18px rgba(73, 59, 118, 0.12);
+}
+
+.midia-texto h3 {
+    color: #493B76;
+    font-size: 1.7rem;
+    margin-bottom: 15px;
+}
+
+.midia-texto p {
+    color: #293241;
+    font-size: 1rem;
+    margin-bottom: 25px;
+}
+
+
+/* ========================================
+   VÍDEO
+======================================== */
+
+.video-container {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #293241;
+}
+
+.video-container video {
+    display: block;
+    width: 100%;
+    max-height: 600px;
+}
+
+
+/* ========================================
+   ÁUDIO
+======================================== */
+
+.audio-container {
+    width: 100%;
+}
+
+.audio-container audio {
+    width: 100%;
+}
+
+
+/* ========================================
+   TRANSCRIÇÕES
+======================================== */
+
+details {
+    margin-top: 25px;
+    background-color: #F2EEF8;
+    border-radius: 8px;
+    padding: 18px 22px;
+}
+
+summary {
+    color: #493B76;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.transcricao {
+    padding-top: 20px;
+}
+
+.transcricao p {
+    color: #293241;
+    margin-bottom: 15px;
+}
+
+.transcricao strong {
+    color: #493B76;
+}
+
+
+/* ========================================
+   SOBRE
+======================================== */
+
+.sobre {
+    background-color: #FFFDF7;
+    padding: 90px 0;
+}
+
+.sobre h2 {
+    color: #493B76;
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+}
+
+.sobre p {
+    max-width: 850px;
+    margin-bottom: 18px;
+    color: #293241;
+    font-size: 1.05rem;
+}
+
+
+/* ========================================
+   RODAPÉ
+======================================== */
+
+.footer {
+    background-color: #493B76;
+    color: #FFFFFF;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.footer h2 {
+    color: #F4C95D;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    margin-bottom: 8px;
+}
+
+.footer strong {
+    color: #F4C95D;
+}
+
+.mensagem-final {
+    max-width: 700px;
+    margin: 25px auto 0;
+    font-weight: 600;
+}
+
+
+/* ========================================
+   ACESSIBILIDADE - FOCO
+======================================== */
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+video:focus-visible,
+audio:focus-visible {
+    outline: 3px solid #F4C95D;
+    outline-offset: 3px;
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+    .header-conteudo {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .apresentacao {
+        min-height: 100vh;
+        padding: 80px 0;
+    }
+
+    .apresentacao h2 {
+        font-size: 2.8rem;
+    }
+
+    .apresentacao p {
+        font-size: 1.15rem;
+    }
+
+    .conteudo-item {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        margin-bottom: 65px;
+    }
+
+    .conteudo-item.invertido .conteudo-texto {
+        order: 1;
+    }
+
+    .conteudo-item.invertido .conteudo-imagem {
+        order: 2;
+    }
+
+    .conteudo-imagem {
+        height: 300px;
+    }
+
+    .midia-item {
+        padding: 28px;
+    }
+}
+
+
+/* ========================================
+   CELULAR
+======================================== */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 90%;
+    }
+
+    .header {
+        padding: 22px 0;
+    }
+
+    .logo-area h1 {
+        font-size: 2rem;
+    }
+
+    .logo-area p {
+        font-size: 0.9rem;
+    }
+
+    .menu {
+        gap: 15px;
+    }
+
+    .menu a {
+        font-size: 0.9rem;
+    }
+
+    .apresentacao {
+        min-height: 100vh;
+        padding: 60px 0;
+    }
+
+    .tag {
+        font-size: 0.9rem;
+        margin-bottom: 18px;
+    }
+
+    .apresentacao h2 {
+        font-size: 2rem;
+        line-height: 1.2;
+    }
+
+    .apresentacao p {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .conteudo {
+        padding: 60px 0;
+    }
+
+    .conteudo > .container > h2 {
+        font-size: 1.8rem;
+        margin-bottom: 50px;
+    }
+
+    .conteudo-texto h3 {
+        font-size: 1.5rem;
+    }
+
+    .conteudo-texto p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+
+    .conteudo-texto strong {
+        font-size: 1rem;
+    }
+
+    .conteudo-imagem {
+        height: 240px;
+        border-radius: 10px;
+    }
+
+    .midias {
+        padding: 60px 0;
+    }
+
+    .midias > .container > h2 {
+        font-size: 1.8rem;
+    }
+
+    .midia-item {
+        padding: 22px;
+    }
+
+    .midia-texto h3 {
+        font-size: 1.4rem;
+    }
+
+    .sobre {
+        padding: 60px 0;
+    }
+
+    .sobre h2 {
+        font-size: 1.8rem;
+    }
+
+    .sobre p {
+        font-size: 0.95rem;
+    }
+
+    .footer {
+        padding: 40px 0;
+    }
+
+    .footer h2 {
+        font-size: 1.8rem;
+    }
+}
