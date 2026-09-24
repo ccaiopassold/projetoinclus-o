@@ -358,6 +358,47 @@ summary {
     color: #F4C95D;
 }
 
+.instagram-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: #F4C95D;
+    margin-top: 5px;
+}
+
+.instagram-icon {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 5px;
+}
+
+.redes-sociais a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #F4C95D;
+    transition: color 0.2s ease;
+}
+
+.redes-sociais a:hover {
+    color: #FFFFFF;
+}
+
+.rede-icon {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+}
+
 .mensagem-final {
     max-width: 700px;
     margin: 25px auto 0;
